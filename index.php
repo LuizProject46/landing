@@ -163,12 +163,12 @@
   <div class="w3-container w3-padding-32" id="contato">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contato</h3>
     <p>Entre em contato para freela</p>
-    <form action="controllers/sendMail.php" method="POST" >
+    <form class="form" action="" method="POST" >
       <input class="w3-input w3-border" type="text" placeholder="Nome" required name="name">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="email">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Assunto" required name="subject">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Mensagem" required name="msg">
-      <input class="btn-send" name="send"type="submit" value="Enviar">
+      <input class="btn-send" name="send"type="button" value="Enviar">
         
     </form>
   </div>
@@ -186,7 +186,8 @@
 <footer  style="background:black;color:white;"class="w3-center  w3-padding-16">
   <p>Powered by LGM <?=date("yy")?></p>
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
 
