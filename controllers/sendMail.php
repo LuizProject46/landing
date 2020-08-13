@@ -25,8 +25,6 @@ try {
 	$mail->Username = 'luizguitar666@gmail.com';
 	$mail->Password = 'luizproject46';
 	$mail->Port = 587;
-  $mail->SMTPSecure = 'ssl';
-  //$mail->Port = 465;
 	$mail->setFrom('luizguitar666@gmail.com');
 	$mail->addAddress('luizguitar666@gmail.com');
 	
