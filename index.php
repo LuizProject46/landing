@@ -163,14 +163,13 @@
   <div class="w3-container w3-padding-32" id="contato">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contato</h3>
     <p>Entre em contato para freela</p>
-    <form action="sendMail.php" method="POST" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Assunto" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Mensagem" required name="Comment">
-      <button class="btn-send" type="submit">
-        <i class="fa fa-paper-plane"></i> Enviar
-      </button>
+    <form action="controllers/sendMail.php" method="POST" >
+      <input class="w3-input w3-border" type="text" placeholder="Nome" required name="name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Assunto" required name="subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Mensagem" required name="msg">
+      <input class="btn-send" name="send"type="submit" value="Enviar">
+        
     </form>
   </div>
   
