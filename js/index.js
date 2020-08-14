@@ -11,6 +11,7 @@ $(document).ready(function (){
    $.ajax({
      url : "./controllers/sendMail.php",
      method: "POST",
+     dataType: "json",
      data:{
        action: "email",
       name: name,
