@@ -1,11 +1,13 @@
 $(document).ready(function (){
-  var name = $(".form input[name=name]").val()
-  var email = $(".form input[name=email]").val()
-  var sub = $(".form input[name=subject]").val()
-  var msg = $(".form input[name=msg]").val()
-
 
   $(".btn-send").click(function (){
+
+
+  var name = $("input[name='name']").val()
+  var email = $("input[name='email']").val()
+  var sub = $("input[name='subject']").val()
+  var msg = $("input[name='msg']").val()
+ 
    $.ajax({
      url : "./controllers/sendMail.php",
      method: "POST",
@@ -18,8 +20,17 @@ $(document).ready(function (){
      },
 
      success : function(data){
+       console.log(data)
         if(data == 1){
-          alert("enviado")
+          $.toast({
+            heading: 'Sucesso!',
+            text: 'Email enviado com sucesso. Em breve você receberá uma resposta em seu e-mail :)',
+            showHideTransition: 'slide',
+            icon: 'success',
+            loaderBg: '#57c7d4',
+            position: 'top-center',
+            hideAfter: 10000
+        })
         }else{
           alert("não enviado")
         }

@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet"  href="node_modules/jquery-toast-plugin/dist/jquery.toast.min.css">
 <style>
     .btn-send{transition: 1s;
     width: 100%;
@@ -21,6 +23,15 @@
     color: #333;
     box-shadow: 1px 1px 7px #333;
     font-size: 16px;
+  }
+  a{
+    color:#333;
+    transition: 0.8s;
+  }
+  a:hover{
+    text-decoration:none;
+    color: purple;
+    transition: 0.8s;
   }
 </style>
 <body>
@@ -62,7 +73,7 @@
   </div>
 
   <div class="w3-container w3-padding-32" id="portifolio">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">SocialSociety - Rede Social</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">SocialSociety - Rede Social<small><a style="text-decoraton:none;" href="http://socialsociety.lgmprojects.com/"> (acesse aqui)</a></small></h3>
   </div>
   <div class="w3-row-padding">
     <div style="width:50%;" class="w3-col l3 m6 w3-margin-bottom">
@@ -158,11 +169,11 @@
       <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
   </div> -->
-
+  
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contato">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contato</h3>
-    <p>Entre em contato para freela</p>
+    <p>Entre em contato pelo formulário abaixo :</p>
     <form class="form" action="" method="POST" >
       <input class="w3-input w3-border" type="text" placeholder="Nome" required name="name">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="email">
@@ -186,8 +197,13 @@
 <footer  style="background:black;color:white;"class="w3-center  w3-padding-16">
   <p>Powered by LGM <?=date("yy")?></p>
 </footer>
+
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="js/index.js"></script>
+<script src="js/toast.js"></script>
+<script src="node_modules/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+
+
 </body>
 </html>
 
