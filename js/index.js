@@ -9,7 +9,7 @@ $(document).ready(function (){
   var msg = $("input[name='msg']").val()
  
    $.ajax({
-     url : "/controllers/sendMail.php",
+     url : "./controllers/sendMail.php",
      method: "POST",
      data:{
        action: "email",
